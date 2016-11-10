@@ -1,0 +1,130 @@
+/*!
+ * Custom CSS
+ */
+
+ /* Header text */
+.head-text {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -9px;
+}
+.head-text i {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFCC33;
+    padding: 1px 3px;
+    font-size: .75em;
+    margin-left: 10px;
+    position: relative;
+}
+.head-text i::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: #FFCC33;
+        position: absolute;
+        left: -8px;
+        top: 0px;
+    }
+@media (max-width: 768px) {
+    .head-text {
+        left: 0;
+        margin-left: 10px;
+        margin-top: -7px
+    }
+    .head-text h3 {
+        font-size: 1.5em;
+    }
+    .sidebar-footer {
+        display: none;
+    }
+
+}
+.navbar-static-top {
+    background: #222;
+}
+
+/* Profile sidebar */
+li.sidebar-profile {
+    background: #FFCC33;
+    height: 90px;
+}
+li.sidebar-profile div {
+    display: inline-block;
+    float: left;
+}
+.profile-pic img {
+    margin: 20px 10px 20px 15px;
+    border: 2px solid #fff;
+}
+.profile-info {
+    overflow: hidden;
+    padding-top: 25px;
+}
+.profile-info a {
+    color: #000;
+    background-color: #FFCC33 !important;
+    margin-top: 24px;
+    line-height: .9px !important;
+}
+.profile-info a:hover {
+    text-decoration: none;
+}
+
+/* sidebar nav */
+@media (min-width: 768px) {
+    #page-wrapper {
+        margin: 0 0 0 200px;
+    }
+    .sidebar,
+    .sidebar-footer {
+        width: 200px;
+    }
+
+}
+
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px 10px 30px;
+}
+.sidebar ul li a {
+    color: #363636;
+}
+.sidebar ul li a.active {
+    background-color: #EEEEEE;
+}
+
+.sidebar ul li a:hover {
+    color: #EF6748;
+}
+
+/*  */
+.sidebar-footer {
+    bottom: 0px;
+    clear: both;
+    display: block;
+    /*padding: 5px 0 0 0;*/
+    position: fixed;
+    width: 200px;
+    background: #999999;
+
+}
+.sidebar-footer a {
+    padding: 10px 0 5px;
+    text-align: center;
+    width: 25%;
+    font-size: 17px;
+    display: block;
+    float: left;
+    color: #222222;
+}
+.sidebar-footer a:hover {
+    background: #222222;
+    color:#FFCC33;
+}
