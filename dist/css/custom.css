@@ -2,6 +2,13 @@
  * Custom CSS
  */
 
+ /* 4test */
+.tab-content .col-test > div {
+    float: left;
+    /*background: #DCDCDC;*/
+    border-right: 1px solid #A9A9A9;
+ }
+
  /* Header text */
 .head-text {
     color: #fff;
@@ -84,14 +91,17 @@ li.sidebar-profile div {
     .sidebar-footer {
         width: 200px;
     }
-
 }
-
-
-.nav>li>a {
+.nav > li > a {
     position: relative;
     display: block;
     padding: 10px 15px 10px 30px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eee;
+    /*background-color: transparent;*/
 }
 .sidebar ul li a {
     color: #363636;
@@ -104,7 +114,7 @@ li.sidebar-profile div {
     color: #EF6748;
 }
 
-/*  */
+/* sidebar footer */
 .sidebar-footer {
     bottom: 0px;
     clear: both;
@@ -113,7 +123,6 @@ li.sidebar-profile div {
     position: fixed;
     width: 200px;
     background: #999999;
-
 }
 .sidebar-footer a {
     padding: 10px 0 5px;
@@ -127,4 +136,61 @@ li.sidebar-profile div {
 .sidebar-footer a:hover {
     background: #222222;
     color:#FFCC33;
+}
+
+/* Content Area */
+.page-header {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    padding-bottom: 1px;
+}
+/* Nav Tabs */
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+    margin-top: 50px;
+}
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+    margin-right: 15px;
+}
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #AEAEAE;
+    padding: 5px 0 0;
+    border: transparent;
+    border-radius: 0px;
+}
+@media (max-width: 768px) {
+    .nav-tabs > li > a {
+        font-size: 16px;
+    }
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    background-color: transparent;
+}
+.nav-tabs > li > a:hover {
+    /*border-color: #fff #fff #fff;*/
+    background: #fff;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:active {
+    color: #333;
+    cursor: default;
+    border: none;
+    border-bottom: 3px solid #FF9900;
+}
+
+/* Profile Forms */
+.profile-pic-xl img {
+    margin: 0;
+}
+.profile-pic-xl button {
+    margin-top: 10px;
 }

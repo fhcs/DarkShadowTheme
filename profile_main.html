@@ -12,7 +12,7 @@
     <title>FHClub_TotalEvo#Breakthrough</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -104,8 +104,39 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Заголовок</h1>
+                    <div class="col-lg-10">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Профиль</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Моя группа</a></li>
+                            <li><a data-toggle="tab" href="#menu2">Обмеры</a></li>
+                            <li><a data-toggle="tab" href="#menu3">Фото</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                                <div class="profile-content-tab1">
+                                    <div class="row col-test">
+                                        <div class="col-xs-3 col-md-2">
+                                            <div class="profile-pic-xl">
+                                                <img src="img/userpic.png" class="img-circle img-thumbnail center-block" alt="User Picture" width="125" height="125">
+                                                <button class="btn btn-default btn-xs center-block">Изменить</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8 col-md-5">кол1</div>
+                                        <div class="col-xs-8 col-xs-offset-3 col-md-5 col-md-offset-0">кол2</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <p>Страница участников группы</p>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <p>Контрольные обмеры</p>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                                <p>Фотографии для голосования</p>
+                            </div>
+                        </div>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
