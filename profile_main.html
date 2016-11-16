@@ -86,10 +86,10 @@
                         </li>
                     </ul>
                     <div class="sidebar-footer">
-                        <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Profile">
+                        <a data-toggle="tooltip" data-placement="top" title="" class="navbar-left" data-original-title="Profile">
                             <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                         </a>
-                        <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Logout" style="float:right">
+                        <a data-toggle="tooltip" data-placement="top" title="" class="navbar-right" data-original-title="Logout">
                             <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                         </a>
                     </div>
@@ -136,7 +136,7 @@
                                                     <div class="form-group">
                                                         <div class="input-group">
                                                             <span class="input-group-addon">
-                                                                <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+                                                                <i class="fa fa-envelope" aria-hidden="true"></i>
                                                             </span>
                                                             <input type="password" id="inputPassword" placeholder="E-Mail" class="form-control">
                                                         </div>
@@ -209,102 +209,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--<div class="profile-content-tab1">
-                                    <div class="row">
-                                        <div class="col-xs-3 col-md-2">
-                                            <div class="profile-pic-xl text-center">
-                                                <img src="img/userpic.png" class="img-circle img-thumbnail" alt="User Picture" width="125" height="125">
-                                                <button class="btn btn-default btn-xs">Изменить</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-8 col-md-5">
-                                            <form>
-                                                <fieldset>
-                                                    <legend>Учетная запись</legend>
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon">
-                                                                <i class="glyphicon glyphicon-phone-alt" aria-hidden="true"></i>
-                                                            </span>
-                                                            <input id="inputLogin" placeholder="Телефон" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon">
-                                                                <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
-                                                            </span>
-                                                            <input type="password" id="inputPassword" placeholder="E-Mail" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                </fieldset>
-                                                <fieldset>
-                                                    <legend>Личные данные</legend>
-                                                    <div class="form-group">
-                                                        <input id="inputName" placeholder="Фамилия" class="form-control">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input id="inputName" placeholder="Имя" class="form-control">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input id="inputName" placeholder="Отчество" class="form-control">
-                                                    </div>
-                                                    <div class="form-group input-group">
-                                                        <input placeholder="Дата рождения" class="form-control">
-                                                        <span class="input-group-btn">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i>
-                                                            </button>
-                                                        </span>
-                                                    </div>
-                                                </fieldset>
-                                            </form>
-                                        </div>
-                                        <div class="col-xs-8 col-xs-offset-3 col-md-5 col-md-offset-0">
-                                            <form>
-                                                <fieldset>
-                                                    <legend>Соц.сети</legend>
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon">
-                                                                <i class="fa fa-youtube-square" aria-hidden="true"></i>
-                                                            </span>
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon">
-                                                                <i class="fa fa-vk" aria-hidden="true"></i>
-                                                            </span>
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon">
-                                                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                                            </span>
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                </fieldset>
-                                                <fieldset>
-                                                    <legend>Изменить пароль</legend>
-                                                    <div class="form-group">
-                                                        <input id="inputLogin" placeholder="Новый пароль" class="form-control">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="password" id="inputPassword" placeholder="Повторить пароль" class="form-control">
-                                                    </div>
-                                                </fieldset>
-                                            </form>
-                                        </div>
-                                        <div class="col-xs-8 col-xs-push-3 col-md-10 col-md-push-2">
-                                            <hr style="width: 100%; height: 1px; background-color: #D3D3D3; border: none">
-                                            <button class="btn btn-primary pull-right" type="button">Сохранить</button>
-                                        </div>
-                                    </div>
-                                </div>-->
                             </div>
                             <div id="menu1" class="tab-pane fade">
                                 <p>Страница участников группы</p>
@@ -339,6 +243,15 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="dist/js/sb-admin-2.js"></script>
+
+    <script> /* Tooltip animation+style */
+     $(function () {
+      $('[data-toggle="tooltip"]').tooltip({
+          animation: true,
+          delay: {"show": 300, "hide": 50}
+      })
+     })
+    </script>
 
 </body>
 
